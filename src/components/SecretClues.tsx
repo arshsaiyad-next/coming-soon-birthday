@@ -13,23 +13,23 @@ export const SecretClues: React.FC = () => {
 
   return (
     <>
-      {/* Clue 1: Tiny glowing dot floating discreetly on the left flank */}
-      <div className="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30">
+      {/* Clue 1: Tiny glowing dot floating discreetly on the left flank (desktop only) */}
+      <div className="hidden sm:block fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30">
         <button
           onClick={() => triggerClue("You're getting warmer… 🔍")}
-          className="relative group p-2 focus:outline-none"
+          className="relative group p-2 focus:outline-none cursor-pointer"
           aria-label="Classified node"
         >
-          <span className="w-2 h-2 rounded-full bg-rosegold/40 group-hover:bg-rosegold block transition-colors animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-rose-petal/50 group-hover:bg-rose-petal block transition-colors animate-pulse" />
           <span className="sr-only">Secret marker</span>
         </button>
       </div>
 
-      {/* Clue 2: Subtle tiny watermark in the right margin */}
-      <div className="fixed right-3 sm:right-6 top-2/3 z-30">
+      {/* Clue 2: Subtle tiny watermark in the right margin (desktop only) */}
+      <div className="hidden sm:block fixed right-3 sm:right-6 top-2/3 z-30">
         <button
           onClick={() => triggerClue("Nope. Not yet. 🤫")}
-          className="font-mono text-[9px] text-slate-700/60 hover:text-rosegold/70 tracking-widest uppercase rotate-90 origin-right transition-colors focus:outline-none"
+          className="font-mono text-[9px] text-rose-blush/30 hover:text-rose-petal tracking-widest uppercase rotate-90 origin-right transition-colors focus:outline-none cursor-pointer"
           aria-label="Encrypted frequency"
         >
           FREQ_2009

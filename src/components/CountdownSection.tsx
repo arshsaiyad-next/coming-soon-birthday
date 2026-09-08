@@ -72,18 +72,23 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ timeRemainin
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Status Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-6 backdrop-blur-md">
-          <Clock className="w-3.5 h-3.5 text-rose-petal animate-pulse" />
-          <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-6 backdrop-blur-md max-w-[92vw]">
+          <Clock className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-rose-petal animate-pulse flex-shrink-0" />
+          <span className="font-mono text-[10px] xs:text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-rose-blush uppercase font-semibold whitespace-nowrap truncate">
             {timeRemaining.phase === 'last10m'
               ? 'FINAL MOMENTS IN PROGRESS'
               : timeRemaining.phase === 'lastHour'
               ? 'FINAL 60 MINUTES'
               : timeRemaining.phase === 'last24h'
               ? 'T-MINUS 24 HOURS • UPCOMING BIRTHDAY'
-              : 'COUNTDOWN TO AN UPCOMING BIRTHDAY • 20 SEPTEMBER 2026'}
+              : (
+                <>
+                  <span className="sm:hidden">UPCOMING BIRTHDAY • 20 SEPT 2026</span>
+                  <span className="hidden sm:inline">COUNTDOWN TO AN UPCOMING BIRTHDAY • 20 SEPTEMBER 2026</span>
+                </>
+              )}
           </span>
-          <Heart className="w-3 h-3 fill-current text-rose-petal" />
+          <Heart className="w-3 h-3 fill-current text-rose-petal flex-shrink-0" />
         </div>
 
         {/* Section Heading */}
@@ -101,10 +106,10 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ timeRemainin
 
         {/* Subtext */}
         <div className="mt-10 sm:mt-14 space-y-2 max-w-lg mx-auto">
-          <p className="font-serif italic text-base sm:text-xl text-rose-blush/90">
+          <p className="font-serif italic text-base sm:text-xl text-rose-blush/90 px-2">
             "{timeRemaining.phaseSubtext}"
           </p>
-          <p className="font-mono text-xs text-rose-gold/80 tracking-widest uppercase">
+          <p className="font-mono text-[10px] sm:text-xs text-rose-gold/80 tracking-wider sm:tracking-widest uppercase px-3 leading-relaxed">
             RESERVED EXCLUSIVELY FOR UPCOMING BIRTHDAY • 20 SEPTEMBER 2026 • 00:00 IST ❤️
           </p>
         </div>

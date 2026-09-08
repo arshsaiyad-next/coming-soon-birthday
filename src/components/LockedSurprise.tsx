@@ -36,9 +36,9 @@ export const LockedSurprise: React.FC<LockedSurpriseProps> = ({
           className="romantic-glass relative rounded-3xl p-8 sm:p-12 border border-rose-petal/40 shadow-[0_25px_60px_rgba(0,0,0,0.9)] overflow-hidden"
         >
           {/* Label */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/70 border border-rose-petal/30 mb-6 backdrop-blur-md">
-            <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
-            <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full bg-black/70 border border-rose-petal/30 mb-6 backdrop-blur-md max-w-[92vw]">
+            <Heart className="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current text-rose-petal flex-shrink-0" />
+            <span className="font-mono text-[10px] xs:text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-rose-blush uppercase font-semibold whitespace-nowrap truncate">
               UPCOMING BIRTHDAY SURPRISE
             </span>
           </div>

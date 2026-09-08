@@ -22,15 +22,16 @@ export const DevPreviewBar: React.FC<DevPreviewBarProps> = ({
   ];
 
   return (
-    <aside aria-label="Simulation Controls" className="fixed bottom-4 left-4 z-50">
+    <aside aria-label="Simulation Controls" className="fixed bottom-4 left-3 sm:left-6 z-50">
       {!isOpen ? (
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-black/80 hover:bg-black border border-rose-petal/35 text-rose-blush hover:text-white text-xs font-mono tracking-wider backdrop-blur-md shadow-2xl transition-all cursor-pointer"
-          title="Preview different countdown states"
+          className="flex items-center justify-center gap-2 p-2.5 sm:px-3.5 sm:py-2 rounded-full bg-black/85 hover:bg-black border border-rose-petal/35 text-rose-blush hover:text-white text-xs font-mono tracking-wider backdrop-blur-md shadow-2xl transition-all cursor-pointer"
+          title="Preview different countdown states (Developer)"
+          aria-label="Preview countdown states"
         >
-          <Sliders className="w-3.5 h-3.5 text-rose-petal" />
-          <span>SIMULATE TIMELINE</span>
+          <Sliders className="w-3.5 h-3.5 text-rose-petal flex-shrink-0" />
+          <span className="hidden sm:inline">SIMULATE TIMELINE</span>
         </button>
       ) : (
         <div className="romantic-glass p-4 rounded-3xl border border-rose-petal/40 shadow-2xl backdrop-blur-2xl flex flex-col gap-2 max-w-xs">

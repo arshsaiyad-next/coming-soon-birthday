@@ -26,17 +26,17 @@ export const TimeProgress: React.FC<TimeProgressProps> = ({ timeRemaining }) => 
 
   return (
     <section className="py-10 px-4 max-w-xl mx-auto text-center relative z-10">
-      <div className="romantic-glass rounded-3xl p-6 sm:p-8 border border-rose-petal/30 shadow-2xl relative overflow-hidden">
+      <div className="romantic-glass rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-rose-petal/30 shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-36 h-36 bg-rose-petal/10 rounded-full blur-2xl pointer-events-none" />
 
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2">
-            <Hourglass className="w-4 h-4 text-rose-petal animate-pulse" />
-            <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
+        <div className="flex items-center justify-between gap-2 mb-4">
+          <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+            <Hourglass className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-rose-petal animate-pulse flex-shrink-0" />
+            <span className="font-mono text-[10px] xs:text-xs tracking-wider sm:tracking-widest text-rose-blush uppercase font-semibold whitespace-nowrap truncate">
               UPCOMING BIRTHDAY • THE WAIT
             </span>
           </div>
-          <span className="font-mono text-xs text-rose-petal tracking-wider font-bold">
+          <span className="font-mono text-[11px] sm:text-xs text-rose-petal tracking-wider font-bold whitespace-nowrap flex-shrink-0">
             {timeRemaining.progressPercentage}% COMPLETE
           </span>
         </div>

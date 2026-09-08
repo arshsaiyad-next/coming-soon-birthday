@@ -7,15 +7,15 @@ interface ClassifiedHeaderProps {
 
 export const ClassifiedHeader: React.FC<ClassifiedHeaderProps> = ({ phase }) => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 px-4 py-3 sm:py-4 pointer-events-none">
+    <header className="fixed top-0 left-0 right-0 z-40 px-3 sm:px-4 py-2.5 sm:py-4 pointer-events-none">
       <div className="max-w-6xl mx-auto flex items-center justify-between pointer-events-auto">
         {/* Left: Romantic Classified Tag */}
-        <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-xl border border-rose-petal/30 shadow-lg">
-          <span className="relative flex h-2 w-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-black/75 backdrop-blur-xl border border-rose-petal/30 shadow-lg max-w-[88vw]">
+          <span className="relative flex h-2 w-2 flex-shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-petal opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-petal"></span>
           </span>
-          <span className="font-mono text-[9px] xs:text-[10px] sm:text-xs tracking-wider xs:tracking-[0.2em] text-rose-blush uppercase font-semibold truncate">
+          <span className="font-mono text-[9px] xs:text-[10px] sm:text-xs tracking-wider xs:tracking-[0.18em] text-rose-blush uppercase font-semibold whitespace-nowrap truncate">
             UPCOMING BIRTHDAY TEASER • 20.09.2026
           </span>
         </div>

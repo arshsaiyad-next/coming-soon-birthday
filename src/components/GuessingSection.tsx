@@ -12,9 +12,9 @@ export const GuessingSection: React.FC = () => {
 
   return (
     <section className="py-16 sm:py-24 px-4 max-w-3xl mx-auto text-center relative z-10">
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-4 backdrop-blur-md">
-        <HelpCircle className="w-3.5 h-3.5 text-rose-petal" />
-        <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
+      <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-4 backdrop-blur-md max-w-[92vw]">
+        <HelpCircle className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-rose-petal flex-shrink-0" />
+        <span className="font-mono text-[10px] xs:text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-rose-blush uppercase font-semibold whitespace-nowrap truncate">
           UPCOMING BIRTHDAY GUESSES • WHAT COULD IT BE?
         </span>
       </div>

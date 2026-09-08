@@ -29,7 +29,7 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
   };
 
   return (
-    <section className="relative min-h-[94vh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20 pb-12 overflow-hidden select-none">
+    <section className="relative min-h-[100dvh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 pt-16 pb-20 sm:pt-20 sm:pb-12 overflow-hidden select-none">
       {/* Dreamy Romantic Ambient Glows */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 sm:w-[580px] h-80 sm:h-[580px] bg-gradient-to-br from-rose-petal/20 to-rose-velvet/30 rounded-full blur-[130px] pointer-events-none animate-starlight-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-rose-wine/50 rounded-full blur-[140px] pointer-events-none" />
@@ -38,7 +38,7 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
       {!isCompleted && (
         <button
           onClick={skipToEnd}
-          className="absolute top-20 right-4 sm:right-8 text-xs font-mono tracking-widest text-rose-blush/70 hover:text-rose-petal transition-colors py-1.5 px-3.5 rounded-full bg-black/60 border border-rose-petal/25 backdrop-blur-md z-20"
+          className="absolute top-16 sm:top-20 right-4 sm:right-8 text-[10px] sm:text-xs font-mono tracking-widest text-rose-blush/70 hover:text-rose-petal transition-colors py-1 px-3 sm:py-1.5 sm:px-3.5 rounded-full bg-black/60 border border-rose-petal/25 backdrop-blur-md z-20"
         >
           SKIP INTRO →
         </button>
@@ -107,13 +107,13 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
               initial={{ opacity: 0, scale: 0.94 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-              className="space-y-6 sm:space-y-8 flex flex-col items-center"
+              className="space-y-5 sm:space-y-8 flex flex-col items-center"
             >
-              {/* Romantic Pill Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/40 shadow-[0_0_25px_rgba(255,158,187,0.25)]">
-                <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
-                <span className="text-[11px] sm:text-xs font-mono uppercase tracking-widest text-rose-blush font-semibold">
-                  UPCOMING BIRTHDAY SPECIAL • 20.09.2026
+              {/* Romantic Pill Badge - Single clean line on all devices */}
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1.5 rounded-full bg-black/60 border border-rose-petal/40 shadow-[0_0_25px_rgba(255,158,187,0.25)] max-w-[92vw]">
+                <Heart className="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current text-rose-petal flex-shrink-0" />
+                <span className="text-[10px] xs:text-[11px] sm:text-xs font-mono uppercase tracking-wider sm:tracking-widest text-rose-blush font-semibold whitespace-nowrap">
+                  UPCOMING BIRTHDAY SPECIAL
                 </span>
               </div>
 
@@ -125,10 +125,10 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
                 <p className="font-mono text-lg xs:text-2xl sm:text-3xl md:text-4xl text-rose-petal tracking-[0.2em] xs:tracking-[0.35em] font-light drop-shadow">
                   20 • 09 • 2026
                 </p>
-                <div className="pt-2">
-                  <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-rose-petal/15 border border-rose-petal/30 text-rose-blush text-xs sm:text-sm font-mono tracking-widest uppercase">
-                    <Sparkles className="w-3.5 h-3.5 text-rose-petal" />
-                    <span>A VERY SPECIAL UPCOMING BIRTHDAY</span>
+                <div className="pt-1 sm:pt-2">
+                  <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1 rounded-full bg-rose-petal/15 border border-rose-petal/30 text-rose-blush text-[10px] xs:text-xs sm:text-sm font-mono tracking-wider sm:tracking-widest uppercase whitespace-nowrap">
+                    <Sparkles className="w-3.5 h-3.5 text-rose-petal flex-shrink-0" />
+                    <span>A SWEET MIDNIGHT SURPRISE AWAITS</span>
                   </span>
                 </div>
               </div>
