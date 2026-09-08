@@ -19,7 +19,7 @@ export const SecretFiles: React.FC = () => {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-4 backdrop-blur-md">
           <Sparkles className="w-3.5 h-3.5 text-rose-petal" />
           <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-            SECRET DOSSIER • TEASERS
+            UPCOMING BIRTHDAY DOSSIER • TEASERS
           </span>
         </div>
         <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-3">

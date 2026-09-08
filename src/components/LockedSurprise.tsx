@@ -39,7 +39,7 @@ export const LockedSurprise: React.FC<LockedSurpriseProps> = ({
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/70 border border-rose-petal/30 mb-6 backdrop-blur-md">
             <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
             <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-              FUTURE BIRTHDAY SURPRISE
+              UPCOMING BIRTHDAY SURPRISE
             </span>
           </div>
 
@@ -55,7 +55,7 @@ export const LockedSurprise: React.FC<LockedSurpriseProps> = ({
           </div>
 
           <p className="font-serif italic text-base sm:text-lg text-rose-blush/90 mt-2 mb-8">
-            Available on 20 September 2026.
+            Reserved for your upcoming birthday on 20 September 2026.
           </p>
 
           {/* Action Button */}

@@ -33,7 +33,7 @@ export const TimeProgress: React.FC<TimeProgressProps> = ({ timeRemaining }) => 
           <div className="flex items-center gap-2">
             <Hourglass className="w-4 h-4 text-rose-petal animate-pulse" />
             <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-              THE WAIT • PROGRESS
+              UPCOMING BIRTHDAY • THE WAIT
             </span>
           </div>
           <span className="font-mono text-xs text-rose-petal tracking-wider font-bold">

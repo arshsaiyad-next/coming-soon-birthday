@@ -16,7 +16,7 @@ export const ClassifiedHeader: React.FC<ClassifiedHeaderProps> = ({ phase }) => 
             <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-petal"></span>
           </span>
           <span className="font-mono text-[9px] xs:text-[10px] sm:text-xs tracking-wider xs:tracking-[0.2em] text-rose-blush uppercase font-semibold truncate">
-            PROJECT 20.09 • FOR HER EYES ONLY
+            UPCOMING BIRTHDAY TEASER • 20.09.2026
           </span>
         </div>
 

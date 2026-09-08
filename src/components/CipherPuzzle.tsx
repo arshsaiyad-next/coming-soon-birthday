@@ -47,7 +47,7 @@ export const CipherPuzzle: React.FC = () => {
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-6 backdrop-blur-md">
         <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
         <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-          LOVE PUZZLE • PROBLEM SOLVING
+          UPCOMING BIRTHDAY PUZZLE • SOLVE FOR HER
         </span>
       </div>
 

@@ -95,8 +95,8 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
                 <Sparkles className="w-3.5 h-3.5 text-rose-petal" />
                 <span>CONFIDENTIAL & SPECIAL</span>
               </div>
-              <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal text-white tracking-wide">
-                Something is coming for you. 🌹
+              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-white tracking-wide px-4">
+                Something special is coming for your upcoming birthday. 🌹
               </h2>
             </motion.div>
           )}
@@ -113,7 +113,7 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/40 shadow-[0_0_25px_rgba(255,158,187,0.25)]">
                 <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
                 <span className="text-[11px] sm:text-xs font-mono uppercase tracking-widest text-rose-blush font-semibold">
-                  CRAFTED WITH LOVE • 20.09.2026
+                  UPCOMING BIRTHDAY SPECIAL • 20.09.2026
                 </span>
               </div>
 
@@ -125,10 +125,16 @@ export const HeroSequence: React.FC<HeroSequenceProps> = ({ onScrollToCountdown 
                 <p className="font-mono text-lg xs:text-2xl sm:text-3xl md:text-4xl text-rose-petal tracking-[0.2em] xs:tracking-[0.35em] font-light drop-shadow">
                   20 • 09 • 2026
                 </p>
+                <div className="pt-2">
+                  <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-rose-petal/15 border border-rose-petal/30 text-rose-blush text-xs sm:text-sm font-mono tracking-widest uppercase">
+                    <Sparkles className="w-3.5 h-3.5 text-rose-petal" />
+                    <span>A VERY SPECIAL UPCOMING BIRTHDAY</span>
+                  </span>
+                </div>
               </div>
 
               <p className="max-w-lg text-xs sm:text-sm text-rose-blush/80 font-light leading-relaxed px-4">
-                The countdown to your special midnight is ticking. Behind the velvet curtain, a world of surprises is waiting just for you.
+                The countdown to your upcoming birthday midnight is ticking. Behind the velvet curtain, a world of surprises is waiting just for you.
               </p>
 
               {/* Action Button to Countdown */}

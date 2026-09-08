@@ -45,7 +45,7 @@ export const MysteryShayari: React.FC<MysteryShayariProps> = ({
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-6 backdrop-blur-md">
         <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
         <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-          URDU NAZAAKAT & POETICS • FOR HER
+          UPCOMING BIRTHDAY POETICS • URDU NAZAAKAT
         </span>
       </div>
 
@@ -53,7 +53,7 @@ export const MysteryShayari: React.FC<MysteryShayariProps> = ({
         Whispers Before Midnight
       </h3>
       <p className="text-xs sm:text-sm text-rose-blush/80 font-light mb-8 max-w-md mx-auto">
-        Khaas tere liye likhe hue lafz, aur 20 September ka be-sabri se intezaar… 🌸
+        Khaas tere upcoming birthday ke liye likhe hue lafz, aur 20 September ka be-sabri se intezaar… 🌸
       </p>
 
       {/* Language Switcher Tabs */}

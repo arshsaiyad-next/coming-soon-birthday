@@ -16,7 +16,7 @@ export const RoyalEnvelope: React.FC = () => {
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/30 mb-6 backdrop-blur-md">
         <Heart className="w-3.5 h-3.5 fill-current text-rose-petal" />
         <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-          FOR MY FAVORITE GIRL
+          AN UPCOMING BIRTHDAY WHISPER • FOR HER
         </span>
       </div>
 

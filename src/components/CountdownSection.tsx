@@ -80,8 +80,8 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ timeRemainin
               : timeRemaining.phase === 'lastHour'
               ? 'FINAL 60 MINUTES'
               : timeRemaining.phase === 'last24h'
-              ? 'T-MINUS 24 HOURS'
-              : 'COUNTDOWN TO YOUR SPECIAL DAY • 20 SEPT'}
+              ? 'T-MINUS 24 HOURS • UPCOMING BIRTHDAY'
+              : 'COUNTDOWN TO AN UPCOMING BIRTHDAY • 20 SEPTEMBER 2026'}
           </span>
           <Heart className="w-3 h-3 fill-current text-rose-petal" />
         </div>
@@ -105,7 +105,7 @@ export const CountdownSection: React.FC<CountdownSectionProps> = ({ timeRemainin
             "{timeRemaining.phaseSubtext}"
           </p>
           <p className="font-mono text-xs text-rose-gold/80 tracking-widest uppercase">
-            RESERVED EXCLUSIVELY FOR 20 SEPTEMBER 2026 • 00:00 IST ❤️
+            RESERVED EXCLUSIVELY FOR UPCOMING BIRTHDAY • 20 SEPTEMBER 2026 • 00:00 IST ❤️
           </p>
         </div>
       </div>

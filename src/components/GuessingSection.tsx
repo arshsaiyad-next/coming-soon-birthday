@@ -15,7 +15,7 @@ export const GuessingSection: React.FC = () => {
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-rose-petal/35 mb-4 backdrop-blur-md">
         <HelpCircle className="w-3.5 h-3.5 text-rose-petal" />
         <span className="font-mono text-xs tracking-widest text-rose-blush uppercase font-semibold">
-          WHAT COULD IT BE?
+          UPCOMING BIRTHDAY GUESSES • WHAT COULD IT BE?
         </span>
       </div>
 
@@ -23,7 +23,7 @@ export const GuessingSection: React.FC = () => {
         ANY GUESSES?
       </h3>
       <p className="text-xs sm:text-sm text-rose-blush/80 font-light max-w-md mx-auto mb-8 sm:mb-10">
-        Care to guess what magic will unlock on 20 September? Pick your theory. 💖
+        Care to guess what magic will unlock for your upcoming birthday on 20 September? Pick your theory. 💖
       </p>
 
       {/* 3 Guess Options */}
